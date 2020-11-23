@@ -1,0 +1,205 @@
+* {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: pink;
+    border-width: 1px;
+    margin: 0%;
+}
+
+h1 {
+    background-color: #262126;
+    color: pink;
+    font-family: fantasy;
+    text-align: right;
+    padding: 5% 10% 5% 5%;
+}
+
+h2 {
+    text-align: left;
+    font-family: fantasy;
+}
+
+img {
+    padding: 5%;
+    float: left;
+}
+
+a {
+    color: inherit;
+}
+
+form {
+    margin: 10%;
+
+}
+
+form fieldset {
+    padding: 5%;
+    
+}
+
+.main {
+    color: white;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.sections {
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.navigation {
+    color: pink;
+    font-size: 10;
+    text-align: right;
+    border-style: solid;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.navigation li {
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 25px 10px 25px;
+    list-style-type: none;
+    
+}
+
+.footer {
+    padding: 2%;
+    color: pink;
+}
+
+.footer li {
+    display: inline-block;
+    margin: 1%;
+    font-size: small;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 10%;
+}
+
+.carouselContainer {
+    overflow: hidden;
+    width: 90%;
+}
+
+.carouselContainer * {
+    box-sizing: border-box;
+}
+
+.carousel {
+    transform-style: preserve-3d;
+}
+
+.carouselImage {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: auto;
+    margin: auto;
+    padding: 1rem 4rem;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.carouselImage.initial, .carouselImage.active {
+    opacity: 1;
+    position: relative;
+    height: 400px;
+    width: auto;
+    z-index: 900;
+}
+
+.carouselImage.prev, .carouselImage.next {
+    z-index: 800;
+}
+
+.carouselImage.prev {
+    transform: translateX(-100%);
+}
+
+.carouselImage.next {
+    transform: translateX(100%);
+}
+
+.carouselButtonPrev, .carouselButtonNext {
+    position: absolute;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    transform: translateY(350%);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001;
+    border: 1px solid pink;
+}
+
+.carouselButtonPrev {
+    left: 0;
+}
+
+.carouselButtonNext {
+    right: 0;
+}
+
+.carouselButtonPrev::after, .carouselButtonNext::after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 54%;
+    border-right: 2px solid pink;
+    border-bottom: 2px solid pink;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carouselButtonNext::after {
+    left: 47%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+
+#contact input {
+    color: pink;
+    background-color: grey;
+    display: block;
+    margin-bottom: 2%;
+    width: 80%;
+}
+
+#commentsInput {
+    height: 60px;
+    overflow: auto;
+}
+
+#submitContact {
+    margin-top: 10%;
+}
+
+#scrollbox {
+    height: 40px;
+    width: 80%;
+    background-color: grey;
+    border-style: hidden;
+    box-shadow: inset;
+    overflow: auto;
+    margin: auto;
+    padding: 5%;
+    text-align: center;
+}
+
+#bioPic {
+    height: auto;
+    width: 45%;
+}
